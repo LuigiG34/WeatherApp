@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.App {
+  background-image: url('../src/assets/cold.png');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.App.warm{
+  background-image: url('../src/assets/warm.png');
+}
+
+main{
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) ,rgba(0,0,0,.4));
+  padding: 25px;
+}
+
+.search-box{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 17px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255,255,255,1);
+}
+
+.location-box .location{
+  color: rgba(255, 255, 255, 0.965);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.location-box .date{
+  color: rgba(255, 255, 255, 0.965);
+  font-size: 17px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.weather-box{
+  text-align: center;
+}
+
+.weather-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  padding: 15px 25px;
+
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+
+.weather-box .weather{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
