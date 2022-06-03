@@ -9,14 +9,14 @@ body{
 }
 
 .App {
-  background-image: url('../src/assets/cold.png');
+  background-image: url('../src/assets/cold.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease-out;
 }
 
 .App.warm{
-  background-image: url('../src/assets/warm.png');
+  background-image: url('../src/assets/warm.jpg');
 }
 
 main{
